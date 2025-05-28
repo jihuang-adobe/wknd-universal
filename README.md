@@ -2,8 +2,8 @@
 
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--wknd-universal--jihuang-adobe.aem.page/
+- Live: https://main--wknd-universal--jihuang-adobe.aem.live/
 
 ## Documentation
 
