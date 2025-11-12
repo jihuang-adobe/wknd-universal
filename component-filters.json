@@ -8,6 +8,7 @@
   {
     "id": "section",
     "components": [
+      "custom-asset-one",
       "button",
       "action-button",
       "cards",
