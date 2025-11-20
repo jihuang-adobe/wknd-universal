@@ -6649,5 +6649,27 @@
         "condition": { "==": [{ "var": "enableSubmitAction" }, true] }
       }
     ]
+  },
+  {
+    "id": "custom-asset-dm",
+    "fields": [
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "name": "image",
+        "label": "Image (DM)",
+        "configUrl": "https://main--demo-boilerplate-xwalk--lamontacrook.hlx.page/tools/assets-selector/image.config.json",
+        "valueType": "string"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset-mimetype",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "valueType": "string"
+      }
+    ]
   }
 ]
