@@ -21,6 +21,7 @@
       "hero",
       "image",
       "quote",
+      "sharepoint-folders",
       "teaser",
       "text",
       "title",
@@ -33,8 +34,7 @@
       "accordion",
       "embed-adaptive-form",
       "find-a-doctor",
-      "custom-asset-dm",
-      "sharepoint-folders"
+      "custom-asset-dm"
     ]
   },
   {
