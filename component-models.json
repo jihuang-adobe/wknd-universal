@@ -6671,5 +6671,17 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "sharepoint-folders",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "folderpath",
+        "label": "Folder Path",
+        "value": ""
+      }
+    ]
   }
 ]
