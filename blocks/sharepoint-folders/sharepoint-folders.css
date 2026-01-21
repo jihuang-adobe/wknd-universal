@@ -1,0 +1,39 @@
+.sharepoint-folders {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sharepoint-folders-none {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px;
+  background-color: grey;
+  width: 100%;
+  min-height: 15px;
+}
+
+.sharepoint-folders-item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sharepoint-folders-item .file-img img {
+  width: 64px;
+  height: 64px;
+}
+
+.sharepoint-folders-item .file-name {
+  font-weight: bold;
+  margin-top: 10px;
+  overflow-wrap: break-word;
+}
+
+.sharepoint-folders-item .file-actions {
+  margin-top: auto;
+}
