@@ -34,6 +34,12 @@
   overflow-wrap: break-word;
 }
 
+.sharepoint-folders-item .file-date {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
 .sharepoint-folders-item .file-actions {
   margin-top: auto;
 }

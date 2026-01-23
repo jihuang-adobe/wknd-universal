@@ -36,48 +36,28 @@ export default async function decorate(block) {
         renderHTML = '';
       }
 
+      const fileIconMap = {
+        rtf:  'https://cdn-icons-png.flaticon.com/128/9496/9496453.png',
+        txt:  'https://cdn-icons-png.flaticon.com/128/9496/9496434.png',
+        zip:  'https://cdn-icons-png.flaticon.com/128/9496/9496565.png',
+        jpeg: 'https://cdn-icons-png.flaticon.com/128/9496/9496440.png',
+        png:  'https://cdn-icons-png.flaticon.com/128/9496/9496440.png',
+        docx: 'https://cdn-icons-png.flaticon.com/128/9496/9496487.png',
+        xlsx: 'https://cdn-icons-png.flaticon.com/128/9496/9496502.png',
+        pptx: 'https://cdn-icons-png.flaticon.com/128/9496/9496492.png',
+        pdf:  'https://cdn-icons-png.flaticon.com/128/9496/9496432.png'
+      };
+      const defaultIcon = 'https://cdn-icons-png.flaticon.com/128/2965/2965335.png';
+
       result.d.results.forEach(function(file) {
         const fileExtension = file.Name.split('.').pop();
-
-        var fileIcon = '';
-
-        switch(fileExtension) {
-          case 'rtf':
-            fileIcon = 'https://cdn-icons-png.flaticon.com/128/8361/8361296.png';
-            break;
-          case 'txt':
-            fileIcon = 'https://cdn-icons-png.flaticon.com/128/136/136539.png';
-            break;
-          case 'zip':
-            fileIcon = 'https://cdn-icons-png.flaticon.com/128/337/337960.png';
-            break;
-          case 'jpeg':
-            fileIcon = 'https://cdn-icons-png.flaticon.com/128/1824/1824880.png';
-            break;
-          case 'png':
-            fileIcon = 'https://cdn-icons-png.flaticon.com/128/1824/1824880.png';
-            break;
-          case 'docx':
-            fileIcon = 'https://cdn-icons-png.flaticon.com/128/8361/8361174.png';
-            break;
-          case 'xlsx':
-            fileIcon = 'https://cdn-icons-png.flaticon.com/128/8361/8361467.png';
-            break;
-          case 'pptx':
-            fileIcon = 'https://cdn-icons-png.flaticon.com/128/9034/9034417.png';
-            break;
-          case 'pdf':
-            fileIcon = 'https://cdn-icons-png.flaticon.com/128/337/337946.png'
-            break;
-          default:
-            fileIcon = 'https://cdn-icons-png.flaticon.com/128/2965/2965335.png'
-        }
+        const fileIcon = fileIconMap[fileExtension] || defaultIcon;
 
         const dateObj = new Date(file.TimeLastModified);
         const createdDate = dateObj.toLocaleDateString('en-US', {
-          weekday: 'short', // ddd
           month: 'short',   // mmm
-          day: 'numeric'    // D
+          day: 'numeric',    // D
+          year: 'numeric'  // YYYY
         })
 
         renderHTML += `
@@ -100,25 +80,4 @@ export default async function decorate(block) {
   }
 
   block.innerHTML = renderHTML;
-
-  /*
-  const [quotation, attribution] = [...block.children].map((c) => c.firstElementChild);
-  const blockquote = document.createElement('blockquote');
-  // decorate quotation
-  quotation.className = 'quote-quotation';
-  blockquote.append(quotation);
-  // decoration attribution
-  if (attribution) {
-    attribution.className = 'quote-attribution';
-    blockquote.append(attribution);
-    const ems = attribution.querySelectorAll('em');
-    ems.forEach((em) => {
-      const cite = document.createElement('cite');
-      cite.innerHTML = em.innerHTML;
-      em.replaceWith(cite);
-    });
-  }
-  block.innerHTML = '';
-  block.append(blockquote);
-  */
 }
