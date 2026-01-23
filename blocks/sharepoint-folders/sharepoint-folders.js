@@ -63,6 +63,9 @@ export default async function decorate(block) {
           case 'xlsx':
             fileIcon = 'https://cdn-icons-png.flaticon.com/128/8361/8361467.png';
             break;
+          case 'pptx':
+            fileIcon = 'https://cdn-icons-png.flaticon.com/128/9034/9034417.png';
+            break;
           case 'pdf':
             fileIcon = 'https://cdn-icons-png.flaticon.com/128/337/337946.png'
             break;
