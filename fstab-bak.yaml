@@ -1,5 +1,0 @@
-mountpoints:
-  /:
-    url: "https://author-p7716-e868301.adobeaemcloud.com/bin/franklin.delivery/jihuang-adobe/wknd-universal/main"
-    type: "markup"
-    suffix: ".html"
