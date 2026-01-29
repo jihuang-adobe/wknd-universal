@@ -13,26 +13,10 @@
     "/content/wknd-universal/configuration:/wknd-universal/.helix/config.json",
     "/content/wknd-universal/metadata:/wknd-universal/metadata.json",
     "/content/wknd-universal/redirects:/wknd-universal/redirects.json",
-    "/content/wknd-universal/placeholders:/wknd-universal/placeholders.json",
-    "/content/wknd-universal-one/language-masters/en:/wknd-universal-one",
-    "/content/wknd-universal-one/language-masters/en/:/wknd-universal-one/en/",
-    "/content/wknd-universal-one/language-masters/fr/:/wknd-universal-one/fr/",
-    "/content/wknd-universal-one/language-masters/fr:/wknd-universal-one/fr",
-    "/content/wknd-universal-one/language-masters/es/:/wknd-universal-one/es/",
-    "/content/wknd-universal-one/language-masters/es:/wknd-universal-one/es",
-    "/content/wknd-universal-one/language-masters/ja/:/wknd-universal-one/ja/",
-    "/content/wknd-universal-one/language-masters/ja:/wknd-universal-one/ja",
-    "/content/wknd-universal-one/language-masters/de/:/wknd-universal-one/de/",
-    "/content/wknd-universal-one/language-masters/de:/wknd-universal-one/de",
-    "/content/wknd-universal-one/configuration:/wknd-universal-one/.helix/config.json",
-    "/content/wknd-universal-one/metadata:/wknd-universal-one/metadata.json",
-    "/content/wknd-universal-one/redirects:/wknd-universal-one/redirects.json",
-    "/content/wknd-universal-one/placeholders:/wknd-universal-one/placeholders.json"
+    "/content/wknd-universal/placeholders:/wknd-universal/placeholders.json"
   ],
   "includes": [
     "/content/wknd-universal/",
-    "/content/dam/wknd-universal/",
-    "/content/wknd-universal-one/",
-    "/content/dam/wknd-universal-one/"
+    "/content/dam/wknd-universal/"
   ]
 }
