@@ -1,0 +1,39 @@
+{
+  "variantName": "search-hero",
+  "baseBlock": "search",
+  "version": "1.0.0",
+  "created": "2026-06-05T05:16:07.687Z",
+  "sourceContext": {
+    "originUrl": "https://www.bd.com/en-us",
+    "originPage": "BD US Homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "hero-search",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "search input + button",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage prominent search bars",
+      "knowledge base search pages",
+      "product discovery search interfaces"
+    ],
+    "notSuitableFor": [
+      "inline page search within content",
+      "sidebar search widgets",
+      "footer search bars"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en-us"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-05T05:16:07.687Z"
+  }
+}

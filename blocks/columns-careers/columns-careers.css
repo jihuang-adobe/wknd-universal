@@ -1,0 +1,189 @@
+/* Block: columns-careers */
+
+/* Two-column layout: image left, text right on dark blue background */
+
+/* Source values from bd.com computed styles */
+
+/* --- Section background image (diamond pattern) --- */
+
+/* The default-content-wrapper before the block contains the bg image <p><picture> */
+
+/* Hide it since we apply the same image as a CSS background on the wrapper */
+.section .default-content-wrapper:has(+ .columns-careers-wrapper) {
+  display: none;
+}
+
+/* --- Wrapper: full-width dark background with pattern --- */
+.columns-careers-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 100% !important;
+  padding: 40px 24px !important;
+  margin-left: calc(-50vw + 50%);
+  width: 100vw;
+  background-color: var(--dark-color);
+  background-image: url("https://www.bd.com/content/dam/bd-assets/bd-com/en-us/images/corporate/homepage/career_site_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* --- Block root --- */
+.columns-careers {
+  background-color: var(--dark-color);
+  color: var(--text-light);
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Row layout - mobile first (stacked) */
+.columns-careers > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image cell */
+.columns-careers > div > .columns-careers-img-col {
+  order: 0;
+}
+
+.columns-careers > div > .columns-careers-img-col picture {
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 0 50% 50% 0;
+}
+
+.columns-careers > div > .columns-careers-img-col picture::before {
+  display: none;
+}
+
+.columns-careers > div > .columns-careers-img-col img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text cell */
+.columns-careers > div > div:not(.columns-careers-img-col) {
+  order: 1;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Eyebrow text (first paragraph - "Careers") */
+.columns-careers > div > div:not(.columns-careers-img-col) > p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--body-font-family);
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: var(--text-light);
+  margin: 0 0 8px;
+}
+
+/* Heading */
+.columns-careers h2 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--heading-font-family);
+  line-height: 36px;
+  letter-spacing: 0.9216px;
+  color: var(--text-light);
+  margin: 0 0 16px;
+}
+
+/* Body paragraphs */
+.columns-careers > div > div:not(.columns-careers-img-col) > p:not(:first-child) {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--body-font-family);
+  line-height: 21px;
+  letter-spacing: 0.2352px;
+  color: var(--text-light);
+  margin: 0 0 8px;
+}
+
+/* Link / CTA - reset EDS button decoration */
+.columns-careers a:any-link,
+.columns-careers a.button:any-link {
+  color: var(--text-light);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  white-space: normal;
+  overflow: visible;
+}
+
+.columns-careers a::after,
+.columns-careers a.button::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'%3E%3Cpath d='M5 12h14M12 5l7 7-7 7'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0;
+  float: none;
+  font-family: inherit;
+}
+
+.columns-careers a:hover,
+.columns-careers a.button:hover {
+  color: var(--text-light);
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.columns-careers a:hover::after,
+.columns-careers a.button:hover::after {
+  color: var(--text-light);
+}
+
+/* Button container reset */
+.columns-careers .button-container {
+  margin: 8px 0 0;
+}
+
+/* Desktop layout */
+@media (width >= 900px) {
+  .columns-careers-wrapper {
+    padding: 40px 32px !important;
+  }
+
+  .columns-careers > div {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .columns-careers > div > .columns-careers-img-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    order: unset;
+  }
+
+  .columns-careers > div > div:not(.columns-careers-img-col) {
+    flex: 1;
+    padding: 0 36px;
+    order: unset;
+  }
+
+  .columns-careers h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

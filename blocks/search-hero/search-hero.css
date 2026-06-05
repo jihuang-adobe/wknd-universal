@@ -1,0 +1,208 @@
+/* Block: search-hero */
+
+/* Full-width dark navy search bar with diagonal accent and centered search input */
+
+/* Full-width wrapper override */
+.search-hero-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.search-hero {
+  background-color: rgb(145 153 216);
+  color: var(--text-light);
+  padding: 48px 24px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 164px;
+}
+
+/* Diagonal accent overlay */
+.search-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 55%;
+  height: 100%;
+  background-color: var(--dark-color);
+  transform: skewX(-20deg);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* search box */
+.search-hero .search-hero-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Hide the search icon - using input placeholder instead */
+.search-hero .search-hero-box .icon {
+  display: none;
+}
+
+.search-hero .search-hero-box input {
+  box-sizing: border-box;
+  display: block;
+  flex: 1;
+  margin: 0;
+  padding: 0 16px;
+  height: 64px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  font-family: var(--body-font-family);
+  font-weight: 600;
+  line-height: 27px;
+  transition: box-shadow 0.2s;
+}
+
+.search-hero .search-hero-box input::placeholder {
+  color: #000;
+  opacity: 0.7;
+}
+
+.search-hero .search-hero-box input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(145 153 216 / 50%);
+}
+
+/* Search button - styled via the SEARCH text in the input's adjacent area */
+
+/* The decorate() function doesn't create a button, but we style it as if the action triggers search */
+
+/* Actually the block only has input + results. We need a submit action visual. */
+
+/* Adding a pseudo-element button appearance after the input */
+.search-hero .search-hero-box::after {
+  content: 'SEARCH';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--text-light);
+  padding: 0 32px;
+  height: 64px;
+  border-radius: 0 6px 6px 0;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--heading-font-family);
+  letter-spacing: 1.6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* search results */
+.search-hero ul.search-hero-results {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 16px;
+}
+
+.search-hero ul.search-hero-results:empty {
+  display: none;
+}
+
+.search-hero ul.search-hero-results > li {
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.search-hero ul.search-hero-results > li > a {
+  display: block;
+  height: 100%;
+  background-color: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.search-hero ul.search-hero-results > li > a::after {
+  display: none;
+}
+
+.search-hero ul.search-hero-results > li > a:hover,
+.search-hero ul.search-hero-results > li > a:focus {
+  text-decoration: none;
+}
+
+.search-hero ul.search-hero-results > li .search-hero-result-title,
+.search-hero ul.search-hero-results > li p {
+  padding: 0 16px;
+  color: var(--text-color);
+}
+
+.search-hero ul.search-hero-results > li .search-hero-result-title {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.search-hero ul.search-hero-results > li .search-hero-result-title a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.search-hero ul.search-hero-results > li .search-hero-result-title a::after {
+  display: none;
+}
+
+.search-hero ul.search-hero-results > li p {
+  font-size: 14px;
+}
+
+.search-hero ul.search-hero-results > li .search-hero-result-image {
+  aspect-ratio: 16 / 9;
+}
+
+.search-hero ul.search-hero-results > li picture img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* no results */
+.search-hero ul.search-hero-results.no-results {
+  display: block;
+}
+
+.search-hero ul.search-hero-results.no-results > li {
+  background-color: transparent;
+  color: var(--text-light);
+  border: none;
+}
+
+@media (width >= 900px) {
+  .search-hero {
+    padding: 48px 32px;
+  }
+
+  .search-hero .search-hero-box {
+    max-width: 700px;
+  }
+
+  .search-hero ul.search-hero-results {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    max-width: 700px;
+  }
+}

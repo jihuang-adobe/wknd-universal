@@ -1,0 +1,40 @@
+{
+  "variantName": "tabs-portfolio",
+  "baseBlock": "tabs",
+  "version": "1.0.0",
+  "created": "2026-06-05T05:16:07.743Z",
+  "sourceContext": {
+    "originUrl": "https://www.bd.com/en-us",
+    "originPage": "BD US Homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "grey",
+    "density": "spacious",
+    "purpose": "portfolio",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon tabs + challenge/solution content + links",
+    "buttonCount": 0,
+    "imageCount": 7
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product/service portfolio showcases",
+      "capability area navigation",
+      "solutions by category displays",
+      "icon-based tabbed navigation"
+    ],
+    "notSuitableFor": [
+      "simple text-only tabs",
+      "FAQ accordions",
+      "image gallery tabs"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en-us"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-05T05:16:07.743Z"
+  }
+}

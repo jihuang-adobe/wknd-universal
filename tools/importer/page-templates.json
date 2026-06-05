@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.bd.com/en-us"
+      ],
+      "description": "BD US homepage with hero, product categories, news, and corporate information",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [
+            ".hero-spotlight-slider"
+          ]
+        },
+        {
+          "name": "search-hero",
+          "instances": [
+            ".bd-hero-search"
+          ]
+        },
+        {
+          "name": "cards-news",
+          "instances": [
+            ".bd-trending"
+          ]
+        },
+        {
+          "name": "tabs-portfolio",
+          "instances": [
+            ".bd-image-map.bd-home-page__protfolio"
+          ]
+        },
+        {
+          "name": "columns-careers",
+          "instances": [
+            ".consolidated-image-card"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Carousel",
+          "selector": ".hero-spotlight-slider",
+          "style": null,
+          "blocks": [
+            "carousel-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Search Bar",
+          "selector": ".bd-hero-search",
+          "style": null,
+          "blocks": [
+            "search-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "News Trending",
+          "selector": ".bd-trending",
+          "style": null,
+          "blocks": [
+            "cards-news"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Our Portfolio",
+          "selector": ".bd-container.bd-container__grey",
+          "style": "grey",
+          "blocks": [
+            "tabs-portfolio"
+          ],
+          "defaultContent": [
+            ".bd-image-map__section-name",
+            ".bd-image-map__section-description"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Careers",
+          "selector": ".consolidated-image-card",
+          "style": "dark",
+          "blocks": [
+            "columns-careers"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

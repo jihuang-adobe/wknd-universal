@@ -1,0 +1,40 @@
+{
+  "variantName": "columns-careers",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-06-05T05:16:07.917Z",
+  "sourceContext": {
+    "originUrl": "https://www.bd.com/en-us",
+    "originPage": "BD US Homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "careers",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + eyebrow + heading + paragraphs + link",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "careers/recruitment CTAs",
+      "about us promotional sections",
+      "culture showcase with team photos",
+      "image-left text-right promotional blocks"
+    ],
+    "notSuitableFor": [
+      "multi-column text layouts",
+      "comparison columns",
+      "feature columns with icons"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en-us"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-05T05:16:07.917Z"
+  }
+}

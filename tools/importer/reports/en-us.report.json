@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.bd.com/en-us",
+  "path": "en-us",
+  "timestamp": "2026-06-05T14:16:03.773Z",
+  "title": "Advancing the World of Health | BD",
+  "template": "homepage",
+  "blocks": [
+    "carousel-hero",
+    "search-hero",
+    "cards-news",
+    "tabs-portfolio",
+    "columns-careers"
+  ]
+}

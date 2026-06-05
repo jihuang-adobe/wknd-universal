@@ -1,0 +1,11 @@
+{
+  "type": "xwalk",
+  "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
+  "contentHostUrl": "author-p190257-e1978547.adobeaemcloud.com",
+  "previewOrg": "jihuang-adobe",
+  "previewSite": "wknd-universal",
+  "aemSitePath": "/content/wknd-universal",
+  "aemAssetsFolderPath": "/content/dam/wknd-universal",
+  "aemSiteName": "wknd-universal",
+  "aemSiteTitle": "WKND Universal"
+}

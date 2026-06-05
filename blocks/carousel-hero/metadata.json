@@ -1,0 +1,39 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-06-05T05:16:07.263Z",
+  "sourceContext": {
+    "originUrl": "https://www.bd.com/en-us",
+    "originPage": "BD US Homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage hero carousels",
+      "landing page banners with rotating content",
+      "full-width promotional sliders"
+    ],
+    "notSuitableFor": [
+      "small inline carousels",
+      "product image galleries",
+      "testimonial sliders without background images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en-us"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-05T05:16:07.263Z"
+  }
+}

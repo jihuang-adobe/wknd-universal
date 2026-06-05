@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-news",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-05T05:16:07.714Z",
+  "sourceContext": {
+    "originUrl": "https://www.bd.com/en-us",
+    "originPage": "BD US Homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "news",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + category tag + title link + description",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "news article listings",
+      "blog post grids",
+      "press release summaries",
+      "content with category labels"
+    ],
+    "notSuitableFor": [
+      "product cards with pricing",
+      "team member profiles",
+      "feature cards with icons"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en-us"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-05T05:16:07.714Z"
+  }
+}
